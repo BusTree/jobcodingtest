@@ -5,7 +5,7 @@ import time
 # 손님에게 거슬러 줘야할 돈이 N원일 때 거슬러 줘야 할 동전의 최소 개수를 구하라. 단, 거슬러 줘야할 돈 N은 항상 10의 배수이다.
 
 
-Units = [500, 100, 50 ,10]
+Units = [500, 100, 50, 10]
 repaidMoney = 5680
 coinType = 0
 coinCount = 0
@@ -25,3 +25,17 @@ print("time :", end_time - start_time)
 ## 1.049
 print('결과 - 거슬러 줘야하는 최소개수의 동전')
 print(coinCount)
+
+## ======================= 답안
+
+n = 1260
+count = 0
+
+# 큰 단위의 화폐부터 차례대로 확인
+coin_types = [500, 100, 50 ,10]
+
+for coin in coin_types:
+    count += n // coin # 해당 화폐로 거슬러 줄 수있는 동전의 개수 세기
+    n %= coin
+
+print(count)
