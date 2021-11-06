@@ -1,8 +1,9 @@
 import time
 import math
 math.factorial(100000)
-# 1이 될 때까지
 start_time = time.time()
+
+## 문제 작성할 것
 
 n = 17
 k = 4

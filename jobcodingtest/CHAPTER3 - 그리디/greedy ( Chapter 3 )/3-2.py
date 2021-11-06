@@ -1,4 +1,7 @@
 import time
+import math
+math.factorial(100000)
+start_time = time.time()
 
 # 큰 수의 법칙
 # 첫째 줄에 N, M K의 자연수가 주어지며, 각자연수는 공백으로 구분한다.
