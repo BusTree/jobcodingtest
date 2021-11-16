@@ -4,7 +4,7 @@ n = input()
 
 array = []
 
-for i in len(n):
+for i in range(int(n)):
     array.append(random.randrange(1, 501))
 
 array.sort(reverse=True)
