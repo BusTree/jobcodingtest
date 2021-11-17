@@ -13,7 +13,9 @@ a.sort()
 b.sort(reverse=True)
 
 for i in range(k):
-    a[i] = b[i]
+    if a[i] < b[i]:
+        a[i], b[i] = b[i], a[i]
+    else:
+        break
 
-print('result')
 print(sum(a))
