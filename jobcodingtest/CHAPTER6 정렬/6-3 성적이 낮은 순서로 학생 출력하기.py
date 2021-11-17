@@ -15,3 +15,8 @@ print(array)
 
 for i in array:
     print(i[0], end=' ')
+
+
+# sorted()는 전역함수로 사용되고 key로 lambda를 사용가능하다.
+# sort()는 array객체에 있는 함수이다.
+# 파이썬 형변환에 주의해야한다.
