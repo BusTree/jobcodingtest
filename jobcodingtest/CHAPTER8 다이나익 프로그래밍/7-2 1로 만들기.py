@@ -1,39 +1,32 @@
 
-x = 26
-step = [26]
 result = []
 result.append(26)
-count = 0
 
-def search(x, count):
+def search(list):
     array = []
-    print('xxxx')
-    print(x)
-    if x % 5 == 0:
-        array.append(x // 5)
+    for x in list:
+        if x % 5 == 0:
+            array.append(x // 5)
 
-    if x % 3 == 0:
-        array.append(x // 3)
+        if x % 3 == 0:
+            array.append(x // 3)
 
-    if x % 2 == 0:
-        array.append(x // 2)
+        if x % 2 == 0:
+            array.append(x // 2)
 
-    array.append(x - 1)
-    count += 1
+        array.append(x - 1)
+        print('array')
+        print(array)
+        if x == 1:
+            break
 
-    return array, count
+        return array
 
-while True:
-    print('count', count)
-    step, step_count = search(step[count], count)
-    for i in step:
-        search(i, count)
-    count += step_count
-    # result.append(step)
-    # print(result)
 
-    if step.count(1):
-        break
+array = search(result)
+print('array', array)
 
-print('result')
-print(result)
+# 배열로 저장하면서 백터개념으로다가 배열에 쌓아서 계산해보는걸 하고싶음
+# 즉 1번 상황 [26]
+# 2번 [26, [13, 25]] or [13, 25]
+# 3번 [26, [13, 25], [12, 5]]or [12, 5]
