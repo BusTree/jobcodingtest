@@ -1,4 +1,4 @@
-array = [3, 9, 8, 7, 8]
+array = [3, 9, 8, 7, 8, 7, 3, 5]
 temp = []
 
 for (i, value) in enumerate(array):
