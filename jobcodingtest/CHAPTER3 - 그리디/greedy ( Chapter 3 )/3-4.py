@@ -5,8 +5,8 @@ start_time = time.time()
 
 ## 문제 작성할 것
 
-n = 17
-k = 4
+n = 25
+k = 5
 count = 0
 
 while n != 1:
