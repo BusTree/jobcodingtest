@@ -1,6 +1,9 @@
+# 두 배열의 원소 교체
+
 import random
 
 user_input = input().split(' ')
+
 a, b = [], []
 n = int(user_input[0])
 k = int(user_input[1])

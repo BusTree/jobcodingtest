@@ -1,3 +1,5 @@
+# 6-2 위에서 아래로
+
 import random
 
 n = input()

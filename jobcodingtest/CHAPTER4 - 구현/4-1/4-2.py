@@ -1,5 +1,5 @@
 # 시각
-n = 14 # user Input
+n = 5 # user Input
 mm = 60
 ss = 60
 result = 0
