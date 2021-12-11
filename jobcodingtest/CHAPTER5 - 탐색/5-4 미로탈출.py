@@ -25,6 +25,7 @@ input_list = [
 
 visited = [False] * len(input_list)
 
+
 def escape(graph, start, visited):
     queue = deque([start])
 

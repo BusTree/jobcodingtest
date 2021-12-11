@@ -1,9 +1,10 @@
 import time
 import math
+
 math.factorial(100000)
 start_time = time.time()
 
-## 문제 작성할 것
+# 문제 작성할 것
 
 n = 25
 k = 5

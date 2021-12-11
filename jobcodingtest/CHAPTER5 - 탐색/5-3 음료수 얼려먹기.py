@@ -11,6 +11,7 @@ graph = []
 for i in range(n):
     graph.append(list(map(int, input())))
 
+
 # DFS로 특정한 노드를 방문한 뒤에 연결된 모드 노드들도 방문
 def dfs(x, y):
     # 주어진 범위를 벗어나는 경우에는 즉시 종료
@@ -27,10 +28,11 @@ def dfs(x, y):
         dfs(x, y + 1)
     return False
 
+
 # 모든 노드(위치)에 대하여 음료수 채우기
 result = 0
 for i in range(n):
     for j in range(m):
         # 현재 위치에서 DFS 수행
-        if dfs(i, j) == True:
+        if dfs(i, j):
             result += 1

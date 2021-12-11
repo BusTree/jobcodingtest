@@ -2,8 +2,7 @@ n = 2
 m = 15
 
 moeny_type = [2, 3]
-dp = []
-dp.append(m)
+dp = [m]
 
 while m > 0:
     array = []
@@ -14,7 +13,7 @@ while m > 0:
     if dp[-1] <= 0:
         break
 
-if(dp[-1] == 0):
+if dp[-1] == 0:
     print(dp[-2])
 
 else:

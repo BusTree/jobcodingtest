@@ -20,5 +20,4 @@ resultList.sort()
 print('정답')
 print(resultList[-1])
 
-
-## min, max 함수 이해하기
+# min, max 함수 이해하기

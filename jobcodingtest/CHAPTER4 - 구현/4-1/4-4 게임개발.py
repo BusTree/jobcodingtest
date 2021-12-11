@@ -12,10 +12,10 @@ full_map = []
 world = []
 count = 1
 
-full_map.append(list(map(int,str(input_map_1.replace(" ", "")))))
-full_map.append(list(map(int,str(input_map_2.replace(" ", "")))))
-full_map.append(list(map(int,str(input_map_3.replace(" ", "")))))
-full_map.append(list(map(int,str(input_map_4.replace(" ", "")))))
+full_map.append(list(map(int, str(input_map_1.replace(" ", "")))))
+full_map.append(list(map(int, str(input_map_2.replace(" ", "")))))
+full_map.append(list(map(int, str(input_map_3.replace(" ", "")))))
+full_map.append(list(map(int, str(input_map_4.replace(" ", "")))))
 
 for (i, y) in enumerate(full_map):
     row_map = []
@@ -26,7 +26,7 @@ for (i, y) in enumerate(full_map):
             "tread": 0,  # 해당 픽셀 밟았는지 여부
             "x": j,
             "y": i
-            }
+        }
         row_map.append(map_status)
     world.append(row_map)
 
@@ -37,20 +37,21 @@ axis = state[2]  # 서있는 방향
 direction_type = [0, 1, 2, 3]
 rotation = 0
 
+
 # 배열값 계산하거나 원형아닌형태 찾을것 원형아닌걸 찾아야 앞으로도 편하게 문제풀수있음
 
 def check_map(single_map, axis, x, y):
     check_result = None
-    if axis == 0 and x-1 >= 0:
-        check_result = single_map[y][x-1]
-    elif axis == 1 and y-1 >= 0:
-        check_result = single_map[y-1][x]
-    elif axis == 2 and x+1 < len(single_map):
-        check_result = single_map[y][x+1]
-    elif axis == 3 and y+1 < len(single_map):
-        check_result = single_map[y+1][x]
+    if axis == 0 and x - 1 >= 0:
+        check_result = single_map[y][x - 1]
+    elif axis == 1 and y - 1 >= 0:
+        check_result = single_map[y - 1][x]
+    elif axis == 2 and x + 1 < len(single_map):
+        check_result = single_map[y][x + 1]
+    elif axis == 3 and y + 1 < len(single_map):
+        check_result = single_map[y + 1][x]
     return check_result
-    return None
+
 
 while True:
     check = check_map(world, axis, state_x, state_y)

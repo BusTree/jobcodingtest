@@ -1,5 +1,6 @@
 import time
 import math
+
 math.factorial(100000)
 start_time = time.time()
 
@@ -20,11 +21,10 @@ for idx, val in enumerate(numbers):
     if val < numbers[0]:
         idx = 0
         continue
-    if M < K :
+    if M < K:
         result += M * val
         break
     M -= K
-
 
 print(result)
 # 페이지 92 - 다시풀기 ( while문 사용 )

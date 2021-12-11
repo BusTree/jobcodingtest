@@ -5,15 +5,15 @@
 n = 7
 
 # 배열의 크기
-m = 150 # m번 더해서 최종적으로 가장큰 수를 구한다.
-k = 11 # 하나의 인덱스 반복수
+m = 150  # m번 더해서 최종적으로 가장큰 수를 구한다.
+k = 11  # 하나의 인덱스 반복수
 
 result = 0
 
 array = [2, 4, 5, 4, 6, 7, 9]
 array.sort()
 
-(a, b) = (array[n-1], array[n-2])
+(a, b) = (array[n - 1], array[n - 2])
 (c, d) = divmod(m, k + 1)
 
 first = k * c * a  # 1번 배열 값

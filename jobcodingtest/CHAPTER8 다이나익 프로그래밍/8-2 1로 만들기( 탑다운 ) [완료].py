@@ -1,6 +1,6 @@
+result = [[26]]
 
-result = []
-result.append([26])
+
 def search(list):
     array = []
     for x in list:
@@ -15,6 +15,7 @@ def search(list):
 
         array.append(x - 1)
     return array
+
 
 while True:
     array = search(result[-1])

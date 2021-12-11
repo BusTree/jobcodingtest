@@ -1,6 +1,5 @@
 import random
 
-
 # n = random.randrange(1, 1000)
 n = 3
 x = n
