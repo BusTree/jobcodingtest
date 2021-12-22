@@ -1,18 +1,12 @@
 
 ^
 ..idea/inspectionProfiles/profiles_settings.xml,1/e/1e9075f5bf079c01ef2c910709e91a497d262080
-Z
-*jobcodingtest/CHAPTER4 - 구현/4-1/4-3.py,a/6/a6b94c39698bddc82b98bbfc46938f51f7aca414
 g
 7jobcodingtest/CHAPTER4 - 구현/4-1/4-3 Retry 완료.py,d/c/dc614f26c28c934358e4bb25d8e53277cf5d429c
 V
 &jobcodingtest/CHAPTER5 - 탐색/que.py,f/b/fb242876289bb7992618f389523ec31839475d28
 n
 >jobcodingtest/CHAPTER3 - 그리디/greedy ( Chapter 3 )/3-1.py,8/a/8a9b4b5858c2a4d753818cdca713f015973106f0
-Z
-*jobcodingtest/CHAPTER4 - 구현/4-1/4-1.py,7/f/7f182327235a830a39d7aabfcc5d873c7767b9a5
-Z
-*jobcodingtest/CHAPTER4 - 구현/4-1/4-2.py,6/4/6471bed10024f6ed02c753c9c92743e52a82cbc6
 �
 Sjobcodingtest/CHAPTER6 정렬/6-3 성적이 낮은 순서로 학생 출력하기.py,f/6/f6c860db03b5745f794f97a96ce7691a6cddf707
 9
@@ -41,3 +35,9 @@ n
 >jobcodingtest/CHAPTER3 - 그리디/greedy ( Chapter 3 )/3-4.py,a/8/a8f754b3bcb702376d4c057fa22b30e3f25490e0
 q
 Ajobcodingtest/CHAPTER8 다이나익 프로그래밍/8-4 정답.py,a/5/a53f95861248f102a13e3edcaef050365c770b16
+t
+Djobcodingtest/CHAPTER3 - 그리디/greedy ( Chapter 3 )/3-2 ReTry.py,b/0/b062dbd64e5b111e1f3b4af00f9d57e860fbdb9c
+G
+jobcodingtest/readme.md,8/9/89bb58989d72a90a85a0eb84a98b26f138363ea7
+m
+=jobcodingtest/CHAPTER5 - 탐색/5-3 음료수 얼려먹기.py,c/2/c2896cc92dfc1e97b2e5fbf6fba075730ffac397
