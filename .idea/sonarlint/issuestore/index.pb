@@ -41,3 +41,9 @@ G
 jobcodingtest/readme.md,8/9/89bb58989d72a90a85a0eb84a98b26f138363ea7
 m
 =jobcodingtest/CHAPTER5 - 탐색/5-3 음료수 얼려먹기.py,c/2/c2896cc92dfc1e97b2e5fbf6fba075730ffac397
+g
+7jobcodingtest/CHAPTER4 - 구현/4-1/4-4 게임개발.py,c/c/cc58cfcc3fdb2740eb37aab3c4e226825865b934
+c
+3jobcodingtest/CHAPTER5 - 탐색/5-4 미로탈출.py,5/1/512c89d97265bdfc54e4248180e1b8d311822452
+�
+Ujobcodingtest/CHAPTER8 다이나익 프로그래밍/8-5 효율적인 화폐 구성.py,1/f/1f22aa97bbf617b7fc573827741334c78a7d7479
