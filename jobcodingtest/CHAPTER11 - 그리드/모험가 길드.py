@@ -6,7 +6,7 @@ count = 0
 result = 0
 for i, value in enumerate(fear):
     count += 1
-    if(count >= value):
+    if  (count >= value):
         result += 1
         count = 0
 
