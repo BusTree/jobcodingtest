@@ -51,3 +51,9 @@ Ujobcodingtest/CHAPTER8 다이나익 프로그래밍/8-5 효율적인 화폐 구
 Njobcodingtest/프로그래머스 문제풀이/비밀지도 [카카오 1차].py,e/f/efa227a2a0a5f6a9e4be11496d3a6c33000d283b
 u
 Ejobcodingtest/CHAPTER7 이진탐색/7-3 이진탐색 ( 반복문 ).py,5/7/5760e859178512e0063d15e30e9b3344949b7c06
+q
+Ajobcodingtest/CHAPTER11 - 그리드/곱하기 혹은 더하기.py,4/8/48d2734aa70b060844b8d137ab0e67bd70a9c8ee
+g
+7jobcodingtest/CHAPTER11 - 그리드/모험가 길드.py,a/c/ac0a8b90ebc853555c6c228418e5906e86c5ec64
+o
+?jobcodingtest/CHAPTER11 - 그리드/만들 수 없는 금액.py,0/7/0723b60cbb34565d8af1ff543699658c32624339
