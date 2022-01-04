@@ -1,7 +1,6 @@
 word = 'K1KA5CB7'
 lst = list(word)
 lst.sort()
-
 n = 0
 point = 0
 
