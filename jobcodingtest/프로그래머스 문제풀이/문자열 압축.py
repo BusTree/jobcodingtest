@@ -1,5 +1,5 @@
 # word = 'aabbaccc  답 7'
-word = 'abcabcdede' 답 8
+word = 'abcabcdede'  # 답 8
 
 # 완전탐색으로 문제풀것 각 문자열단위로 잘라서 대입해보고 크기비교
 
@@ -14,12 +14,10 @@ for i in range(1, len(word)):
         count += 1
         print('같은 문자열 반복')
         print(word[:i])
-        continue
     elif ord(word[i]) == ord(word[i - 1]) + 1:
         count += 1
         print('연속된 문자열')
         print(word[:i])
-        continue
     elif count > 1:
         print('문자열 끊김')
         word[i]
