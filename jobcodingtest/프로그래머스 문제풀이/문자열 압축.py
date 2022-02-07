@@ -11,9 +11,6 @@ def list_chunk(lst, n):
 for i in range(1, len(word)):
     array.append(list_chunk(word, i))
 
-print('array')
-print(array)
-
 for i in range(0, len(array)):
     row = {
         'num': 1,
@@ -47,9 +44,6 @@ for i in range(0, len(array)):
             result.append(change)
             print(result)
 
-
-print(result)
-
 for i in range(0, len(result)):
     last = ''
     for j in range(0, len(result[i])):
@@ -59,4 +53,4 @@ for i in range(0, len(result)):
     result2.append(last)
 
 print('정답')
-print(len(min(result2)))
+print(len(max(result2, key=lambda s: -len(s))))
