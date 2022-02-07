@@ -1,4 +1,5 @@
-word = 'aabbaccc'  # 답 7
+# word = 'aabbaccc'  # 답 7
+word = 'ababcdcdababcdcd'  # 답 9
 array = []
 result = []
 result2 = []
@@ -28,6 +29,8 @@ for i in range(0, len(array)):
             # print('문자열 끊김')
             print(array[i][j - 1])
             row['str'] = array[i][j - 1]
+            if(row['num'] == 1):
+                row['num'] = ''
             change.append(row)
             row = {
                 'num': 1,
@@ -45,11 +48,12 @@ for i in range(0, len(array)):
 print(result)
 
 for i in range(0, len(result)):
-    count = 0
+    last = ''
     for j in range(0, len(result[i])):
-        count += result[i][j]['num']
+        last += str(result[i][j]['num'])
+        last += result[i][j]['str']
         print(result[i][j]['num'])
-    result2.append(count)
+    result2.append(last)
 
-
-print(result2)
+print('정답')
+print(len(min(result2)))
