@@ -1,28 +1,55 @@
-# word = 'aabbaccc  답 7'
-word = 'abcabcdede'  # 답 8
-
-# 완전탐색으로 문제풀것 각 문자열단위로 잘라서 대입해보고 크기비교
-
-# 답 7
-word = list(word)
-result = len(word)
-count = 0
-print(result)
+word = 'aabbaccc'  # 답 7
 array = []
-for i in range(1, len(word)):
-    if word[i] == word[i - 1]:
-        count += 1
-        print('같은 문자열 반복')
-        print(word[:i])
-    elif ord(word[i]) == ord(word[i - 1]) + 1:
-        count += 1
-        print('연속된 문자열')
-        print(word[:i])
-    elif count > 1:
-        print('문자열 끊김')
-        word[i]
-        array.append(count+1)
-        count = 0
+result = []
+result2 = []
+def list_chunk(lst, n):
+    return [lst[i:i+n] for i in range(0, len(lst), n)]
 
+
+for i in range(1, len(word)):
+    array.append(list_chunk(word, i))
+
+print('array')
 print(array)
 
+for i in range(0, len(array)):
+    row = {
+        'num': 1,
+        'str': ''
+    }
+    change = []
+    for j in range(1, len(array[i])):
+        if array[i][j] == array[i][j - 1]:
+            row['num'] += 1
+            # print('같은 문자열 반복')
+            print(row['num'])
+
+        else:
+            # print('문자열 끊김')
+            print(array[i][j - 1])
+            row['str'] = array[i][j - 1]
+            change.append(row)
+            row = {
+                'num': 1,
+                'str': ''
+            }
+
+        if (len(array[i]) - 1 == j):
+            row['str'] = array[i][j - 1]
+            change.append(row)
+
+            print(array[i][j - 1])
+            result.append(change)
+
+                
+print(result)
+
+for i in range(0, len(result)):
+    count = 0
+    for j in range(0, len(result[i])):
+        count += result[i][j]['num']
+        print(result[i][j]['num'])
+    result2.append(count)
+
+
+print(result2)
