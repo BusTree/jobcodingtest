@@ -42,7 +42,7 @@ def solution(n, weak, dist):
                     if count > len(dist):  # 더 투입이 불가능하다면 종료
                         break
                     position = weak[index] + friends[count - 1]
-        answer = min(answer, count)
+            answer = min(answer, count)
     if answer > len(dist):
         return -1
     return answer
