@@ -34,8 +34,11 @@ def search():
 def solution(array):
     result = []
     for i in array:
-        el = ''.join(i)
-        el = math.trunc(eval(el))
+        el = i[0]
+        for j in range(2, len(i)):
+            if j % 2 == 0:
+                temp = eval(str(el) + i[j - 1] + i[j])
+                el = math.trunc(temp)
         result.append(el)
 
     print('result')
@@ -44,6 +47,7 @@ def solution(array):
 
 
 searchResult = search()
+solution(searchResult)
 max, min = solution(searchResult)
 print('result')
 print(max)
