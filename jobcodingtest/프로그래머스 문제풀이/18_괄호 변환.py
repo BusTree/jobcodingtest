@@ -6,6 +6,9 @@ u = ''
 global v  # 빈 문자열이 될수도있다.
 v = '()))((()'
 
+global result
+result = ''
+
 def u_append(u, v):
     startCount = 0
     endCount = 0
@@ -47,9 +50,16 @@ while test > 0:
     correct = checkCorrect(u)
 
     if correct:
+        result = u
         u, v = u_append(u, v)
+        print('vvvvvvvvvv')
+        print(v)
+        result = u + v
+        print('result')
+        print(result)
     else:
         print('4-1 진행')
+        u, v = u_append(u, v)
         v = '(' + v + ')'
         print('v 값 확인')
         print(v)
