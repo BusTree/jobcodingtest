@@ -31,8 +31,6 @@ def bfs(graph, start, visited, count):
                 queue.append(i)
                 visited[i] = True
 
-
-
             if count == 2 and i == len(graph[v]) - 1:
                 print('stop')
                 print(queue)

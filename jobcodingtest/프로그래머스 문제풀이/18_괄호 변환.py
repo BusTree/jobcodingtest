@@ -1,5 +1,8 @@
 # 괄호 변환
-from itertools import count
+# 답안이랑 뭐가다른지 찾아볼것
+# 민우 문제풀이 방법대로 풀어볼 것
+
+import copy
 
 global u  # 균형잡힌 괄호 문자열로 더이상 분리할수 없어야 함
 u = ''
@@ -50,12 +53,10 @@ while test > 0:
     correct = checkCorrect(u)
 
     if correct:
-        result = u
+        result = copy.deepcopy(u)
         u, v = u_append(u, v)
-        print('vvvvvvvvvv')
-        print(v)
-        result = u + v
-        print('result')
+        result += v
+        print('correct')
         print(result)
     else:
         print('4-1 진행')

@@ -53,3 +53,4 @@ def makeObstacle():
 searchTeacher()
 makeObstacle()
 
+# 파이썬 2중포문 한번에 돌릴수있다 앞으로 활용가능
